@@ -1,0 +1,76 @@
+*{
+	margin: 0; padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+.Backimg{
+ width: 100%;
+ height: 100vh;
+ background-image: linear-gradient(27deg, #fff 50%, #c3f5ff 50%);
+}
+.centerdiv{		
+	width: 350px;
+	height: 400px;
+	position: absolute; 
+
+	border-radius: 25px;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: linear-gradient(27deg, #c3f5ff 50%, #fff 50%);
+}
+#profilepic{
+	width: 120px;		
+	height: 120px;
+	border-radius: 50%;
+	position: relative;
+	top: -60px;
+	left: calc( (350px - 120px) / 2 );
+}
+
+h2{
+	text-align: center;
+	color: #c3f5ff;
+	text-transform: uppercase;
+	font-size: 2em;
+	word-spacing: 10px;
+	margin-top: -50px;
+	margin-bottom: 50px;
+	text-shadow: -2px 2px 1px #0A84c6;
+}
+.inputbox{
+	width: calc(100% - 40px);
+	height: 30px;
+	display: block;
+	margin: auto;
+	padding: 0 10px;
+	
+	box-sizing: border-box;
+	
+}
+
+::placeholder{
+	
+	color: black;
+	text-transform: uppercase;
+}
+button{
+	width: 110px;				/* calc(100% - 40px);*/
+	height: 30px;
+	display: block;
+	margin: auto;
+	padding: 10px 10px;
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+	top: 50px;
+	background-color: #4458dc;
+	border: none;
+	border-radius: 5px;
+}
+button:hover{
+	background-color: white;
+	color: black;
+	transition: all 0.2s linear;
+	box-shadow: 3px 4px 6px lightblue; 
+}

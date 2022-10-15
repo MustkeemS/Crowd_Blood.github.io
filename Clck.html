@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Click to start funding</title>
+	<!-- <link rel="stylesheet" type="text/css" href="CSS\Clck.css"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	<style >
+		*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Rubik', sans-serif;
+}
+.navsection{
+	width: 100%;
+	height: 16vh;
+	display: flex; justify-content: space-around; 
+	align-items: center;
+	background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%)
+}
+h1{
+	text-transform: uppercase;
+	color: #4458dc;
+	font-size: 30px;
+	font-weight: 15px;
+}
+main{
+	height: 80vh;
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+} 
+.leftside{
+	background-image: linear-gradient(#fff, #c3f5ff);
+	height: 550px;
+	width: 300px;
+	/*padding-left: 30px;*/
+}
+.leftside, p{
+	/*text-align: center; */
+	padding-right: 20px;
+	text-transform: uppercase;
+	font-size: 15.5px;
+	font-weight: 950;
+}
+
+
+
+
+
+.leftside img{
+	max-width: 200px;
+	padding-top: 10px;
+	border-radius: 50%;
+	padding-left: 50px;
+}
+.pob{
+	color: white;
+	margin: 3px 30px;
+	height: 30px;
+	width: 250px;
+	background-color: #4458dc;
+	text-transform: uppercase;
+	border:none;
+	cursor: pointer;
+}
+.pob:hover{
+	border: 2px solid #c3f5ff/*#4458dc*/;
+	color: #222;
+	background-color: #fff;
+	box-shadow: 0 10px 30px rgba(90,70,150,3);
+	background-image: none;
+}
+.card-details{
+	background: #fff;
+	color: #555;
+	margin: 
+	10px 30px;
+	padding: 10px;
+	align-items: left;
+}
+.card-details p{
+	font-size: 14px;
+}
+.card-details label{
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 900;
+}
+.card-num{
+	margin-top: 10px;
+}
+.expiry-date{
+	margin-top: 10px;
+	display: inline-block;
+}
+.cvv{
+	margin-top: 10px;
+	display: inline-block;
+	float: right;
+}
+.name{
+	margin-top: 10px;
+}
+.card-filed, .name-field{
+	width: 270px;
+}
+.cvv-field, .expiry-filed{
+	width: 80px;
+}
+.card-details input{
+	border: 1px solid #ccc;
+	height: 11px;
+	padding: 5px;
+	font-size: 12px;
+	
+}
+.card-details input:: placeholder{
+	color: #ccc;
+}
+.pay-btn{
+	width: 220px;
+	color: white;
+
+	height: 20px;
+	margin-top: 22px;
+	background-color: #4458dc;
+	text-transform: uppercase;
+	border:none;
+	cursor: pointer;
+}
+.pay-btn:hover{
+	border: 2px solid #c3f5ff/*#4458dc*/;
+	color: #222;
+	background-color: #fff;
+	box-shadow: 0 10px 30px rgba(90,70,150,3);
+	background-image: none;
+}
+.lul{
+	padding-left: 50px;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+	<section class="navsection">
+		<div>
+			<h1>CrowdFunding Website</h1>
+		</div>
+	</section>
+	<main>
+		<div class="leftside">
+			<div class="lul">
+			<p>donation for XYZ's cancer</p></div>
+			<img src="image/cncr.jpg">
+			<div class="btn-box">
+				<button type="button" class="pob">pay with PayTm</button>
+				<button type="button" class="pob">pay with PhonePe</button>
+				<div class="card-details">
+					<p>pay using debit or credit card</p>
+					<div class="card-num">
+						<label>card number</label><br>
+						<input type="text" name="card-filed" placeholder="xxxx-xxxx-xxxx">
+					</div>
+					<div class="expiry-date">
+						<label>expiry date</label>
+						<input type="text" name="expiry-filed" placeholder="mm">
+						<input type="text" name="expiry-filed" placeholder="yyyy">
+					</div>
+					<div class="cvv">
+						<label>CVV</label>
+						<input type="password" name="cvv-field" placeholder="xxx">
+						
+					</div><br><br><br>
+					<div class="name">
+						<label>card holder name</label><br>
+						<input type="text" name="name-field" placeholder="full name">
+					</div>
+					<button type="button" class="pay-btn">PAY</button>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+</body>
+</html>

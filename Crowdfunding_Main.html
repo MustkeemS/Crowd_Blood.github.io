@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CrowdFunding Website</title>	
+	<link rel="stylesheet" type="text/css" href="CSS\style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+<header>
+
+	<section class="navsection">
+		<div class="logo">
+			<h1>CrowdFunding Website</h1>
+		</div>
+		<nav>
+			<a href="#">Home</a>
+			<a href="https://www.instagram.com/official_mustkeem_772" target="_blank">instagram</a>
+			<a href="https://www.facebook.com/mustkeem.saifi.9028" target="_blank">Facebook</a>
+			<a href="Contect.html" target="_blank">Contect Us</a>
+			<a href="purpose.html" target="_blank">For Your purpose</a>
+		</nav>
+	</section>
+
+
+	<main>
+		<div class="leftside">
+			
+			<h3>hello</h3>
+			<h1>welcome to crowdfunding website</h1>
+			<h2>A website to fund or contribute</h2>
+			<a href="Clck.html" target="_blank" class="btn1">Click For Donation</a>
+			<a href="Login.php" target="_blank" class="btn2">admin login</a>
+		</div>
+
+		<div class="rightside">
+
+			<p>
+				TOTAL CONTRIBUTION - <b>9,53,975 INR.</b>.<br><br>
+			</p>
+			<img src="image/love.png">
+		</div>
+	</main>
+</header>
+
+	<!-- FOR NOTIFICATION -->
+
+	<section class="custom-social-proof">
+    <div class="custom-notification">
+      <div class="custom-notification-container">
+        <div class="custom-notification-image-wrapper">
+          <img class="img1" src="image/note.png">
+        </div>
+        <div class="custom-notification-content-wrapper">
+          <p class="custom-notification-content">
+            Mr.Umar, Payal, Kriti and 49 others <br>Contributed total <b>21,983 INR.</b>    
+            <small>1 hour ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="custom-close"></div>
+    </div>
+  </section>
+
+	<!--javascript part-->
+
+
+ <script type="text/javascript">
+ 	setInterval(function(){ $(".custom-social-proof").stop().slideToggle('slow'); }, 8000);
+      $(".custom-close").click(function() {
+        $(".custom-social-proof").stop().slideToggle('slow');
+      });
+ </script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+ 	
+ </script>
+
+
+
+
+
+</body>
+</html>
+
+

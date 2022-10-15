@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For your Purpose</title>
+	<link rel="stylesheet" type="text/css" href="CSS\purpose.css">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+ 	<section class="nav">
+ 		<h1>For Your Purpose</h1>
+ 	</section>
+ 	<main>
+ 		<div>
+
+ 			<form action="upload.php" method="POST" enctype="multipart/form-data">
+
+ 				<label for="user"><b> Name </b></label>
+	    		<input type="text" id="user" name="username" placeholder="Enter your Name">
+
+	    		<label><b>Emailid</b></label>
+	    		<input type="text" name="Emailid" placeholder="Enter your Emailid">
+
+	    		<label ><b>Contect Number</b></label>
+	    		<input type="text" name="Number" placeholder="Enter your Number">
+
+	    		<label for="file"><b>Upload your docs for verification</b></label>
+	    		<input type="file" name="photo" id="file"  >
+
+	 			<label><b>reason / cause</b></label>
+				<textarea name="reason" rows="6" cols="9" placeholder="Write the reason for what you want to get cuntribution"></textarea>     
+				<!-- <button class="btn">Submit</button>  -->
+		
+		
+				<input class="prs" type="submit" name="submit" onclick="fun()" value="Click to submit your request">
+		<script>
+				function fun(){
+				alert("Your request has been uploaded")
+			}
+		</script>
+		
+
+			</form>
+
+		
+
+
+		</div>
+	</main>
+ </header>
+</body>
+</html>
